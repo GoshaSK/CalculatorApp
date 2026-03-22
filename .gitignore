@@ -1,0 +1,15 @@
+# CMake build files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+build-*/
+
+# Qt temporary files
+*.moc
+*.rcc
+*.ui.h
+*.qrc
+*.user
+*.user.*
+*.autosave

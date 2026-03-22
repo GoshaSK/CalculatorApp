@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-f451ea8e34af8a4e6bfb.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "CalculaorApp",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "CalculaorApp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CalculaorApp-Debug-9406b2865d8a6f165715.json",
+					"name" : "CalculaorApp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "CalculaorApp_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CalculaorApp_autogen-Debug-35509dd422e042291a33.json",
+					"name" : "CalculaorApp_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "CalculaorApp_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CalculaorApp_autogen_timestamp_deps-Debug-099f87abe53e9eb07783.json",
+					"name" : "CalculaorApp_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/lev/Projects/Qt/CalculaorApp/build/Qt_6_10_2_for_macOS-u041eu0442u043bu0430u0434u043au0430",
+		"source" : "/Users/lev/Projects/Qt/CalculaorApp"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
