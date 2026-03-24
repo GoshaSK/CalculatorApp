@@ -20,6 +20,9 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->btnClear, &QPushButton::clicked, this, &MainWindow::onClearClicked);
     connect(ui->btnAdd, &QPushButton::clicked, this, &MainWindow::onAddClicked);
     connect(ui->btnEqual, &QPushButton::clicked, this, &MainWindow::onEqualClicked);
+    connect(ui->btnMul, &QPushButton::clicked, this, &MainWindow::onMulClicked);
+    connect(ui->btnSub, &QPushButton::clicked, this, &MainWindow::onSubClicked);
+    connect(ui->btnDiv, &QPushButton::clicked, this, &MainWindow::onDivClicked);
 }
 
 MainWindow::~MainWindow()
@@ -48,12 +51,41 @@ void MainWindow::onAddClicked(){
     ui->display->clear();
 }
 
+void MainWindow::onMulClicked(){
+    first = ui->display->text().toDouble();
+    operation = "x";
+    ui->display->clear();
+}
+
+void MainWindow::onSubClicked(){
+    first = ui->display->text().toDouble();
+    operation = "-";
+    ui->display->clear();
+}
+
+void MainWindow::onDivClicked(){
+    first = ui->display->text().toDouble();
+    operation = "/";
+    ui->display->clear();
+}
+
 void MainWindow::onEqualClicked(){
     double second = ui->display->text().toDouble();
     double result = 0;
 
     if (operation == "+"){
         result = first + second;
+    } else if (operation == "x"){
+        result = first * second;
+    } else if (operation =="-"){
+        result = first - second;
+    } else if (operation == "/"){
+        if (second != 0){
+            result = first / second;
+        } else {
+            ui->display->setText("Error");
+            return;
+        }
     }
 
     ui->display->setText(QString::number(result));

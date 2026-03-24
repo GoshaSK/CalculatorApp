@@ -25,6 +25,9 @@ private slots:
     void onClearClicked();
     void onAddClicked();
     void onEqualClicked();
+    void onSubClicked();
+    void onMulClicked();
+    void onDivClicked();
 private:
     double first = 0;
     QString operation;
