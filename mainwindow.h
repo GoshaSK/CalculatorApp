@@ -19,5 +19,14 @@ public:
 
 private:
     Ui::MainWindow *ui;
+
+private slots:
+    void onDigitClicked();
+    void onClearClicked();
+    void onAddClicked();
+    void onEqualClicked();
+private:
+    double first = 0;
+    QString operation;
 };
 #endif // MAINWINDOW_H
