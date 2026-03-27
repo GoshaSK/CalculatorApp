@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-f451ea8e34af8a4e6bfb.json",
+					"jsonFile" : "directory-.-Debug-afa0bb76d7053569cb9e.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -44,7 +44,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "CalculaorApp::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-CalculaorApp-Debug-9406b2865d8a6f165715.json",
+					"jsonFile" : "target-CalculaorApp-Debug-d3cb333dac0212d0998e.json",
 					"name" : "CalculaorApp",
 					"projectIndex" : 0
 				},

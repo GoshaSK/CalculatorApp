@@ -1,2 +1,4 @@
 set(__QT_DEPLOY_TARGET_CalculaorApp_FILE /Users/lev/Projects/Qt/CalculaorApp/build/Qt_6_10_2_for_macOS-u041eu0442u043bu0430u0434u043au0430/CalculaorApp.app/Contents/MacOS/CalculaorApp)
 set(__QT_DEPLOY_TARGET_CalculaorApp_TYPE EXECUTABLE)
+set(__QT_DEPLOY_TARGET_test_calculator_FILE /Users/lev/Projects/Qt/CalculaorApp/build/Qt_6_10_2_for_macOS-u041eu0442u043bu0430u0434u043au0430/test_calculator)
+set(__QT_DEPLOY_TARGET_test_calculator_TYPE EXECUTABLE)

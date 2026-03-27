@@ -73,20 +73,20 @@ void MainWindow::onEqualClicked(){
     double second = ui->display->text().toDouble();
     double result = 0;
 
-    if (operation == "+"){
-        result = first + second;
-    } else if (operation == "x"){
-        result = first * second;
-    } else if (operation =="-"){
-        result = first - second;
-    } else if (operation == "/"){
-        if (second != 0){
-            result = first / second;
-        } else {
-            ui->display->setText("Error");
-            return;
+    try {
+        if (operation == "+"){
+            result = calculator.add(first, second);
+        } else if (operation == "-"){
+            result = calculator.sub(first, second);
+        } else if (operation == "x"){
+            result = calculator.mul(first, second);
+        } else if (operation == "/"){
+            result = calculator.div(first, second);
         }
-    }
 
-    ui->display->setText(QString::number(result));
+        ui->display->setText(QString::number(result));
+
+    } catch (...) {
+        ui->display->setText("Error");
+    }
 }

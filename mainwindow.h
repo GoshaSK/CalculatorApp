@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "calculator.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -31,5 +32,7 @@ private slots:
 private:
     double first = 0;
     QString operation;
+
+    Calculator calculator;
 };
 #endif // MAINWINDOW_H
